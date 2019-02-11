@@ -1,0 +1,92 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image:url("images/heart_background.jpg");
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  /* align-items: center; */
+}
+
+.container{
+  flex:1;
+  /* height: calc(100vh - 100px); */
+  display:flex;
+  flex-direction: row;
+  flex-basis:auto;
+  /* flex-wrap: wrap; */
+  justify-content: flex-start;
+  width:50%;/*main axis (vertically)*/
+}
+
+.title{
+  flex:1;
+  height: 20%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  font-size: 120%;
+  text-align: top;
+  text-shadow: 3px 2px rgb(247, 149, 187);
+  text-decoration: none;
+}
+
+.gameCanvas{
+   flex:1;
+   display:flex;
+   flex-direction: column;
+   position: fix;
+   width:30%;
+   /* align-items:center; */
+}
+
+.bigDiv{
+  height:600;
+  flex:1;
+  display:flex;
+  flex-direction:reversed-row;
+  /* position:fix; */
+  align-items:flex-end;
+  
+  /* justify-content:flex-end; */
+}
+
+button {
+  background-color: rgb(255, 109, 231); /* pink */
+  border-radius: 50%;
+  border: 2px solid white;
+  width:60%;
+  padding: 30px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 24px;
+  height:30%;
+}
+
+button:hover {
+ background-color: pink;
+ color:rgb(240, 99, 123);
+}
+
+button:border {
+float: center;
+border: 2px solid white;
+}
+
+.instructions:after{
+    content:'Instructions';
+}
+.instructions:after{
+    content:'Tilt your head left to right in order to control the character and avoid the hearts. Press Spacebar to reject heart. Make sure to have your camera turned on!';
+}
+
+div.inline { 
+  float:left; 
+}
+
+.clearBoth { 
+  clear:both; 
+}
